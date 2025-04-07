@@ -172,12 +172,12 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 
-.prestasi-siswa {
+.ppdb-container {
   display: flex;
   flex-direction: column;
   margin: 50px auto;
 }
-.sang-juara {
+.mpls-container {
   width: fit-content;
   display: flex;
   justify-content: center;
@@ -316,7 +316,7 @@ footer {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.prestasi-siswa .prestasi-card {
+.ppdb-container .ppdb-card  {
   width: fit-content;
   background-color: #fff;
   display: flex;
@@ -333,11 +333,11 @@ footer {
   cursor: pointer;
 }
 
-.prestasi-siswa .prestasi-card:hover{
+.ppdb-container .ppdb-card:hover{
     transform: scale(1.02);
 }
 
-.prestasi-card img {
+.ppdb-card img {
   width: 200px;
   height: 150px;
   margin: 10px 20px 10px 10px;
@@ -345,12 +345,12 @@ footer {
   border-radius: 8px;
 }
 
-.prestasi-card-content h3 {
+.ppdb-card-content h3 {
   font-size: 1.5rem;
   font-weight: 700;
 }
 
-.prestasi-card-content .btn {
+.ppdb-card-content .btn {
   font-size: 1rem;
   color: #888;
   background-color: #f0f0f0;
