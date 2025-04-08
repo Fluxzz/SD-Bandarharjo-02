@@ -103,7 +103,34 @@
     -moz-box-shadow: 0px 6px 10px -3px rgba(0, 0, 0, 0.54);
   }
 
-
+  nav ul li {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #f2f2f2;
+  }
+  
 
   .wrapper {
     background-color: #f1f1f1;

@@ -96,6 +96,34 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 
+nav ul li {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 1000;
+  padding: 0;
+  list-style: none;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f2f2f2;
+}
+
 .overlay img {
   width: 100%;
   height: 60vh;
@@ -172,12 +200,15 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 
-.ppdb-container {
+.prestasi-siswa {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
-  margin: 50px auto;
+  gap: 1.5rem;
 }
-.mpls-container {
+.sang-juara {
   width: fit-content;
   display: flex;
   justify-content: center;
@@ -205,8 +236,8 @@ nav ul li a:hover {
 }
 .card img {
   border: 3px solid rgba(0, 0, 0, 0.325);
-  width: 100%;
-  height: 230px;
+  width: 80%;
+  height: 180px;
   background: #d3d3d3;
   border-radius: 20px;
 }
@@ -316,48 +347,49 @@ footer {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.ppdb-container .ppdb-card  {
-  width: fit-content;
-  background-color: #fff;
+.prestasi-siswa .prestasi-card  {
+  background-color: #f9f9f9;
   display: flex;
-  align-items: flex-start;
-  margin: auto;
-  gap: 1rem;
+  align-items: center;
   padding: 20px;
-  margin-bottom: 1.5rem;
-  border-radius: 12px;
-  box-shadow: -6px 7px 5px -1px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: -6px 7px 5px -1px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: -6px 7px 5px -1px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease-in-out;
-  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  gap: 20px;
 }
 
-.ppdb-container .ppdb-card:hover{
-    transform: scale(1.02);
+.prestasi-siswa .prestasi-card:hover{
+  transform: scale(1.01);
 }
 
-.ppdb-card img {
-  width: 200px;
-  height: 150px;
-  margin: 10px 20px 10px 10px;
-  background-color: #407bff;
-  border-radius: 8px;
+.prestasi-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 20px;
+  background-color: #407bff; /* Warna biru placeholder */
 }
 
-.ppdb-card-content h3 {
+.prestasi-card h3 {
   font-size: 1.5rem;
   font-weight: 700;
 }
 
-.ppdb-card-content .btn {
-  font-size: 1rem;
-  color: #888;
+.prestasi-card .btn {
   background-color: #f0f0f0;
-  padding: 5px 10px;
-  border-radius: 999px;
+  color: #bbb;
   border: none;
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-size: 0.95rem;
+  font-weight: 500;
   cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.3s;
+}
+
+.prestasi-card .btn:hover {
+  background-color: #e0e0e0;
 }
 
 .pagination {
