@@ -277,7 +277,7 @@
   .card {
     background: #f9f9f9;
     border-radius: 16px;
-    padding: 10px;
+    padding: 20px;
     box-shadow: -6px 7px 5px -1px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: -6px 7px 5px -1px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: -6px 7px 5px -1px rgba(0, 0, 0, 0.3);
@@ -290,7 +290,7 @@
   
   /* Video Placeholder */
   .video-placeholder {
-    width: 200px;
+    width: 220px;
     height: 150px;
     background-color: #d9d9d9;
     border-radius: 12px;
